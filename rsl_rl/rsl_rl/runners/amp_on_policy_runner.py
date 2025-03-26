@@ -40,8 +40,8 @@ import pickle
 
 from rsl_rl.algorithms import AMPPPO, PPO
 from rsl_rl.modules import ActorCritic, ActorCriticRecurrent, LegActorCritic, JointActorCritic, VAE
-from rsl_rl.modules.vqvae import VQVAE 
-from rsl_rl.modules.transformervae import TransformerVAE 
+#from rsl_rl.modules.vqvae import VQVAE 
+#from rsl_rl.modules.transformervae import TransformerVAE 
 
 from rsl_rl.env import VecEnv
 from rsl_rl.algorithms.amp_discriminator import AMPDiscriminator

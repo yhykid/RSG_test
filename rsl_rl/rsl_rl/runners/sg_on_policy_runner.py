@@ -37,7 +37,8 @@ import statistics
 from torch.utils.tensorboard import SummaryWriter
 import torch
 
-from rsl_rl.algorithms import CompositePPO, CompositeBO, CompositeES
+from rsl_rl.algorithms import CompositePPO, CompositeBO
+#, CompositeES
 # TODO:
 from rsl_rl.modules import Actor, Critic, CompositeActor, NewCompositeActor
 from rsl_rl.env import VecEnv
