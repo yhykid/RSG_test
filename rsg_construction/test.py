@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="models")
 
 args, _ = parser.parse_known_args()
-
+args.model = "runs/Mar27_14-34-04_yhy_688862_kgc_train_1111/save/99"
 TRAINED_FOLDER = args.model
 
 if __name__ == "__main__":
@@ -25,6 +25,7 @@ if __name__ == "__main__":
     sg = SkillGraph({"hidden_dim": 256, "skill_dim": 48, "name": "test", "eval": True})
 
     sg.load(TRAINED_FOLDER)
+    print("#"*80)
     sg.draw_in_neo4j()
     exit(0)
     # for i, s in enumerate(

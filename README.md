@@ -14,7 +14,7 @@ The code repository contains relevant configuration requirements, fundamental sk
 
 ## Usage
 
-### 1. Train a single fundamental skill
+### 1. Train a single fundamental skill (shit)
 ##### 1.1 Installation
 
 1. Create a new python virtual env with python 3.6, 3.7 or 3.8 (3.8 recommended). i.e. with conda:
@@ -80,7 +80,7 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-##### 2.2 Training and evaluation
+##### 2.2 Training and evaluation (OK)
 
 The trained skills and task descriptions are available [google drive](https://drive.google.com/file/d/1Rb6FBOC19RJNcucNqnV60VEWv0IVX-vX/view?usp=drive_link).
 
@@ -91,14 +91,31 @@ cd rsg_construction/
 python train.py
 ```
 
-and
+before test, we should configure neo4j first  
+
+for linux:
+
+```
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.com stable 5' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+sudo apt-get install neo4j
+```
+
+open the web http://localhost:7474 
+
+create the username([defined here](https://github.com/yhykid/RSG_test/blob/main/rsg_construction/skill_graph/graph.py#L642)):neo4j
+
+the password:neo4j123
+
+and for test
 
 ```bash
 cd rsg_construction/
 python test.py
 ```
 
-### 3. Skill inference and composition
+### 3. Skill inference and composition (its funny that the task has not been registred)
 
 ##### 3.1 Skill inference and execution
 
